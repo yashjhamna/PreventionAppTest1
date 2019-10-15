@@ -1,0 +1,167 @@
+<!<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="https://kit.fontawesome.com/c15eadb72f.js" crossorigin="anonymous"></script>
+	<link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!--- Page 1 --------------------------------------->
+  <div data-role="page" id="pageone" data-theme="a">
+
+    <div data-role="panel" id="myPanel">
+      <h2>Navigation</h2>
+      <p><a href="#pageone" class="ui-btn" id="nav-link">Home</a></p>
+      <p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 2</a></p>
+			<p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 3</a></p>
+			<p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 4</a></p>
+			<p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 5</a></p>
+			<p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 6</a></p>
+			<p><a href="#pagetwo" class="ui-btn" id="nav-link">Page 7</a></p>
+    </div>
+    <!-- Header Page 1-->
+    <div id="header_bar" data-role="header">
+			<h1 id="header_title">Teenage Pregnancy Prevention</h1>
+<a id="panel-btn" href="#myPanel"><button class="btn" id="btn_header"><i class="fa fa-bars"></i></button></a>
+<button class="btn" id="btn_header_home"><i class="fa fa-home"></i></button>
+
+			    <!-- <a is="button" class="ui-btn ui-btn-left">Button</a> -->
+			<!-- <h1 id="header_title">Prevention</h1> -->
+      <!-- <a href="#anylink" class="ui-btn-active ui-icon-search ui-btn-icon-left ui-state-persist">Search</a>
+      <a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a> -->
+
+      <!-- navbar page 1 -->
+      <!-- <div data-role="navbar">
+        <ul>
+          <li><a href="#pageone" data-icon="home">Home</a></li>
+          <li><a href="#pagetwo" data-icon="arrow-r">Page 2</a> </li>
+          <li><a href="#" data-icon="search">Search</a> </li>
+        </ul>
+      </div> -->
+      <!-- navbar page 1 end -->
+    </div>
+    <!-- Header Page 1 End -->
+    <div data-role="main" class="ui-content">
+      <p>I am now a mobile developer.</p>
+
+      <div data-role="collapsible">
+        <h1>Click Me - I'm collapsible!</h1>
+        <p>I'm the expanded content.</p>
+      </div>
+
+      <a href="#pagetwo" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="slide">Go to Page Two</a>
+
+      <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+        <li>Row 1</li>
+        <li>Row 2</li>
+      </table>
+
+      <p>Click on the button below to open the Panel.</p>
+      <a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
+      <!-- Main Page 1 End -->
+    </div>
+
+    <!-- Footer Page 1 -->
+    <div data-role="footer">
+      <h2>Footer (toolbar)</h2>
+    </div>
+  </div>
+  <!-- Footer Page 1 End -->
+
+  <!--- Page 2 ----------------------------------------------------------------->
+  <div data-role="page" id="pagetwo" data-theme="a">
+
+    <!-- Header Page 2 -->
+    <div data-role="header">
+      <h1>Welcome to Page 2</h1>
+      <a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+      <a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
+    </div>
+
+    <!-- navbar page 1 -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#pageone" data-icon="arrow-l">Page 1</a> </li>
+        <li><a href="#" data-icon="search">Search</a> </li>
+      </ul>
+    </div>
+    <!-- navbar page 2 end -->
+    <!-- button group -->
+    <div data-role="controlgroup" data-type="horizontal">
+      <a href="#" class="ui-btn">Button 1</a>
+      <a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>
+    </div>
+    <!-- Header Page 2 End -->
+
+    <!-- Main Page 2 -->
+    <div data-role="main" class="ui-content">
+      <a href="#pageone" data-transition="pop">Go to Page One</a>
+      <p>This is a form:</p>
+
+      <!-- form -->
+      <form method="post" action="demoform.asp">
+        <div class="ui-field-contain">
+          <label for="fname">First name:</label>
+          <input type="text" name="fname" id="fname" data-clear-btn="true">
+          <label for="fname">Last name:</label>
+          <input type="text" name="lname" id="lname" data-clear-btn="true">
+          <label for="fname">Age:</label>
+          <input type="text" name="age" id="age" data-clear-btn="true">
+        </div>
+        <fieldset data-role="controlgroup" class="ui-field-contain">
+          <legend>Choose your gender:</legend>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </fieldset>
+
+        <fieldset class="ui-field-contain">
+          <label for="day">Select Day:</label>
+          <select name="day" id="day">
+<option value="mon">Monday</option>
+<option value="tue">Tuesday</option>
+<option value="wed">Wednesday</option>
+</select>
+        </fieldset>
+
+        <fieldset class="ui-field-contain">
+          <label for="points">Points:</label>
+          <input type="range" name="points" id="points" value="50" min="0" max="100" step="5" data-show-value="true">
+        </fieldset>
+
+        <fieldset class="ui-field-contain">
+          <label for="switch">Flip toggle switch checkbox:</label>
+          <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+        </fieldset>
+
+        <input type="reset" value="Reset Button">
+        <input type="submit" value="Submit Button">
+      </form>
+      <!-- form -->
+
+      <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Go Back</a>
+    </div>
+    <!-- Main Page 2 End -->
+
+    <!-- Footer Page 2 -->
+    <div data-role="footer">
+      <h2>Footer (toolbar)</h2>
+    </div>
+  </div>
+  <!-- Footer Page 2 End -->
+</body>
+
+</html>
